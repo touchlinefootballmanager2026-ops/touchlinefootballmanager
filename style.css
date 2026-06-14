@@ -20,7 +20,7 @@ header {
 header h1 { color: var(--teal); font-size: 2rem; }
 .tagline { color: var(--muted); margin-top: .5rem; }
 main { max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem; }
-.banner { width: 260px !important; max-width: 100%; height: auto; }
+.banner { width: 260px; max-width: 100%; height: auto; display: block; margin: 0 auto 1.5rem; border-radius: 12px; }
 .badges { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 .badges img { height: 48px; }
 section { margin: 2.5rem 0; }
