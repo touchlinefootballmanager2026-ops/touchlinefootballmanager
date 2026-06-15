@@ -31,6 +31,7 @@ li::before { content: "▸"; color: var(--teal); position: absolute; left: 0; }
 .doc h2 { margin-top: 1.5rem; }
 .doc p { margin: .6rem 0; }
 a { color: var(--teal); }
+a:hover { color: var(--text); }
 footer {
   text-align: center;
   padding: 2rem 1rem;
@@ -38,3 +39,34 @@ footer {
   border-top: 1px solid var(--panel);
 }
 footer nav { margin-bottom: .75rem; }
+
+/* Community / social links */
+.social { text-align: center; }
+.social-links {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1.1rem;
+}
+.social-links a {
+  padding: .35rem .75rem;
+  border: 1px solid var(--panel);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: border-color .15s ease, color .15s ease;
+}
+.social-links a:hover {
+  color: var(--text);
+  border-color: var(--teal);
+}
+/* The "·" separators between links — hidden since each link is now a pill */
+.social-links { }
+.social-note {
+  color: var(--muted);
+  font-size: .9rem;
+  margin-top: .75rem;
+}
+/* If you switch to icon images later: */
+.social-links img { height: 28px; width: 28px; display: block; }
